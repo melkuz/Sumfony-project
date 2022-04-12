@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Confirmation{% endblock %}
+
+{% block body %}
+<style>
+p{
+    margin: 5px;
+    padding: 5px;
+}
+</style>
+<h1>Merci de nous avoir contacté!</h1>
+
+<p>Nom : {{Nom}}</p>
+<p>Prenom : {{Prenom}}</p>
+<p>Courriel : {{Courriel}}</p>
+<p>Type de message : {{Type}}</p>
+<p>Content : {{Content}}</p>
+
+
+
+{% endblock %}

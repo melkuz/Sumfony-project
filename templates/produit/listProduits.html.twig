@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ListProduits{% endblock %}
+
+{% block body %}
+<style>
+li{
+    margin: 5px;
+}
+</style>
+<ul>
+{% for p in produits %}
+    <li>{{p.produit}} - <a href="produit/{{p.id_produit}}">En savoir plus</a></li> 
+{% endfor %}
+</ul>
+
+
+{% endblock %}
