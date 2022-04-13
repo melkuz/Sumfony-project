@@ -13,8 +13,6 @@ use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 
-
-
 class ClientController extends AbstractController
 {
     #[Route('/contact', name: 'contact')]
@@ -30,7 +28,6 @@ class ClientController extends AbstractController
             'choices' => array(
                 'Question' => 'Question',
                 'Commentaire' => 'Ccommentaire',
-                
                 ),
             'expanded' => true,
             'multiple' => false))
